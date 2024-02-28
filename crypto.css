@@ -330,5 +330,97 @@ main section.middle .cards .card:hover{
     box-shadow: none;
 }
 main section.middle .cards .card .top{
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main section.middle .cards .card .top .left{
+    display: flex;
+    gap: 0.5rem;
+}
+main section.middle .cards .card .top .left img{
+    width: 2.3rem;
+    height: 2.3rem;
+    border: 1px solid white;
+    border-radius: var(--border-radius-2);
+    padding: 0.4;
+}
+main section.middle .cards .card .top img.right{
+    width: 3.5rem;
+}
+main section.middle .cards .card .middle{
+    display: flex;
+    justify-content: space-between;
+}
+main section.middle .cards .card .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+main section.middle .cards .card .bottom .right{
+    display: flex;
+    gap: 2rem;
+}
+
+/*<!--monthly report-->*/
+
+main .monthly-report{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+main .monthly-report h1{
+    font-weight: 700;
+    font-size: 1.8rem
+}
+main .monthly-report .report div{
+    cursor: pointer;
+}
+
+/*<!--fast payment-->*/
+
+main .fast-payment{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+main .fast-payment .badges{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 100%;
+}
+main .fast-payment .badges .badge span{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+main .fast-payment .badges .badge{
+    padding: 0.6rem var(--card-padding);
+    background: var(--color-white);
+    border-radius: var(--border-radius-2);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+}
+main .fast-payment .badges .badge:hover{
+    box-shadow: 0 0 1.3rem var(--color-primary-light);
+    cursor: pointer;
+}
+main .fast-payment .badges .badge:first-child span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    font-size: 1.5rem;
+}
+main .fast-payment .badges .badge div{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
 }
