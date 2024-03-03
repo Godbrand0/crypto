@@ -352,6 +352,9 @@ main section.middle .cards .card .middle{
     display: flex;
     justify-content: space-between;
 }
+main section.middle .cards .card .middle .chip{
+    width: 3.5rem;
+}
 main section.middle .cards .card .bottom{
     display: flex;
     justify-content: space-between;
@@ -423,4 +426,27 @@ main .fast-payment .badges .badge div{
     display: flex;
     gap: 2rem;
     align-items: center;
+}
+
+/* <!--investments--> */
+
+main section.right .investments {
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    margin-right: 1rem;
+}
+main section.right .investments img{
+    width: 2.4rem;
+}
+main section.right .investments header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--card-padding);
+    padding-bottom: 0;
+}
+main section.right .investments .header a{
+    display: flex;
+    align-items: center;
+    color: var(--color-primary);
 }
