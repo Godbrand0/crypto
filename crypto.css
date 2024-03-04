@@ -579,4 +579,37 @@ main .recent-transactions .transaction  .card-details .card{
     main section.middle .cards{
         grid-template-columns: 1fr 1fr;
     }
+    main canvas{
+        margin: 3rem 0 1rem;
+    }
+    main section.right .recent-transactions{
+        margin-top: 3rem;
+    }
+}
+
+/*responsive phones*/
+
+@media screen and (max-width:600px) {
+    nav{
+        width: 106%;
+    }
+    nav .profile-area{
+        gap: 2.6rem;
+    }
+    nav .profile h5,
+    nav .profile span{
+        display: none;
+    }
+    main section.middle .cards{
+        grid-template-columns: 1fr;
+    }
+    main section.middle .fast-payment{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+        gap: 1rem;
+    }
+    main .cards{
+        margin-right: 1rem;
+    }
 }
