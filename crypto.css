@@ -468,3 +468,115 @@ main section.right .investments .investment:hover{
     background: var(--color-light);
     cursor: pointer;
 }
+
+/*<!--recent transaction-->*/
+main .recent-transactions{
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+main .recent-transactions img{
+    width: 2.2rem;
+}
+main .recent-transactions .header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+main .recent-transactions .header a{
+    display: flex;
+    align-items: center;
+    color: var(--color-primary);
+}
+main .recent-transactions .transaction{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem var(--card-padding);
+    border-radius: var(--card-border-radius);
+    transition: all 0.3s ease;
+}
+main .recent-transactions .transaction:hover{
+    background: var(--color-white);
+    cursor: pointer;
+}
+main .recent-transactions .transaction .service{
+    display: flex;
+    gap: 1rem;
+}
+main .recent-transactions .transaction .service .icon{
+    padding: var(--padding-2);
+    border-radius: var(--border-radius-1);
+    display: flex;
+    align-items: center;
+}
+main .recent-transactions .transaction  .card-details{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+main .recent-transactions .transaction  .card-details .card{
+    display: flex;
+    width: 4.6rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius-2);
+}
+/*responsive table*/
+@media screen and (max-width:1024px) {
+    nav .search-bar{
+        display: none;
+    }
+    nav .profile-area{
+        gap: 2rem;
+    }
+    nav .profile-area button#menu-btn{
+        display: inline;
+        background: transparent;
+        color: var(--color-dark);
+    }
+    main{
+        grid-template-columns: 1fr;
+    }
+    main aside{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 3;
+        background: var(--color-white);
+        width: 22rem;
+        height: 100%;
+        box-shadow: 2rem 0 2rem var(--color-primary-light);
+        display: none;
+        animation: showSidebar 0.3s ease forwards;
+    }
+    @keyframes showSidebar {
+        to{
+            left: 0;
+        }
+    }
+
+    main aside button#close-btn{
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 4;
+        background: transparent;
+        color: var(--color-dark);
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    main aside .sidebar{
+        margin-top: 4rem;
+    }
+    main aside .updates{
+        display: none;
+    }
+    main section.middle .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+}
